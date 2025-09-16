@@ -1,5 +1,3 @@
-# experiment.vulkan.hello\_world
-
 Tiny, focused Vulkan experiments for learning-by-doing. Each folder is a 
 self‑contained step with minimal code and lots of comments. This repo
 currently uses **per‑folder Makefiles** (no top‑level build).
