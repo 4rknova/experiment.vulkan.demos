@@ -4,11 +4,11 @@ Tiny, focused Vulkan experiments for learning-by-doing. Each folder is a
 self‑contained step with minimal code and lots of comments. This repo
 currently uses **per‑folder Makefiles** (no top‑level build).
 
-| Experiment       | Goal                                                                                                                                                           | Build                                                          | Output                                                                                   |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **01.minimal**   | Stand up the absolute minimum — create **VkInstance**, pick **VkPhysicalDevice**, create **VkDevice**/**VkQueue**, and clean shutdown.                         | `make` inside `01.minimal/`.                                   | Console logs of adapters/queues; no window, no images.                                   |
-| **02.offscreen** | Render without a window. Create an offscreen **VkImage** + memory/view/framebuffer, record a tiny pipeline + command buffer, submit, and write pixels to disk. | `make` inside `02.offscreen/`.                                 | An image file written to the folder (SPIR-V is built from the GLSL shaders via `glslc`). |
-| **03.onscreen**  | First triangle on screen. Create a surface & swapchain, render pass, graphics pipeline, per-frame synchronization, and present.                                | `make` inside `03.onscreen/` then run the produced executable. | A window that shows a triangle; handles resize by recreating the swapchain.              |
+| Experiment       | Goal                                                                                                                                                           | Output                                                                                   |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **01.minimal**   | Stand up the absolute minimum — create **VkInstance**, pick **VkPhysicalDevice**, create **VkDevice**/**VkQueue**, and clean shutdown.                         | Console logs of adapters/queues; no window, no images.                                   |
+| **02.offscreen** | Render without a window. Create an offscreen **VkImage** + memory/view/framebuffer, record a tiny pipeline + command buffer, submit, and write pixels to disk. | An image file written to the folder (SPIR-V is built from the GLSL shaders via `glslc`). |
+| **03.onscreen**  | First triangle on screen. Create a surface & swapchain, render pass, graphics pipeline, per-frame synchronization, and present.                                | A window that shows a triangle; handles resize by recreating the swapchain.              |
 
 ## Prerequisites
 
